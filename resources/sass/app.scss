@@ -2,6 +2,12 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 
-.descrizione{
+.card{
+    width: 15rem;
     overflow-y: auto;
+
+    .descrizione{
+        overflow-y: auto;
+        height: 8rem;
+    }
 }

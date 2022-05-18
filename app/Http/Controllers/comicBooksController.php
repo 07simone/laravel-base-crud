@@ -36,7 +36,7 @@ class comicBooksController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request)                     // mi richiamo tutto il db li passo il request e alle variabili li do le informazioni create nelle migration
     {
         $data = $request->all();
         $comics = new comicBook();
@@ -49,7 +49,7 @@ class comicBooksController extends Controller
         $comics->type = $data['type'];
         $comics->save();
 
-        return redirect()->route('fumetti.show', $comics);
+        return redirect()->route('fumetti.show', $comics);              // ridirezionami alla creazione del fumetto nuovo e inseriscimelo  nella pagina show
     }
 
     /**

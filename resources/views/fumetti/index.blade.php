@@ -7,17 +7,17 @@
 
 @foreach ($comics as $comic )
     <div class="col-6">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="{{$comic->thumbs}}" class="card-img-top" alt="...">
             <div class="card-body">
-            <a href="{{route('fumetti.show',$comic->id)}}">
                 <h5 class="card-title">{{$comic->title}}</h5>
-            </a>
-
-            <p class="descrizione">{{$comic->description}}</p>
-            <p class="card-text">{{$comic->price}}</p>
-            <p class="card-text">{{$comic->series}}</p>
-            <p class="card-text">{{$comic->sale_date}}</p>
+                <p class="descrizione">{{$comic->description}}</p>
+                <p class="card-text">{{$comic->price}}</p>
+                <p class="card-text">{{$comic->series}}</p>
+                <p class="card-text">{{$comic->sale_date}}</p>
+                <a href="{{route('fumetti.show',$comic->id)}}">
+                    <button type="button" class="btn btn-warning">INFO</button>
+                </a>
             </div>
         </div>
     </div>

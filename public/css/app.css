@@ -11243,6 +11243,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.descrizione {
+.card {
+  width: 15rem;
   overflow-y: auto;
+}
+.card .descrizione {
+  overflow-y: auto;
+  height: 8rem;
 }
